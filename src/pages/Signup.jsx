@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, Link } from "react-router-dom";
 import "../styles/auth.css";
 import { requestSignup, verifyOtp } from "../api/auth";
 
@@ -106,7 +106,7 @@ const Signup = () => {
         )}
 
         <div className="auth-footer">
-          <p>Already have an account? <a href="/login">Login</a></p>
+          <p>Already have an account? <Link to="/login">Login</Link></p>
         </div>
       </div>
     </div>

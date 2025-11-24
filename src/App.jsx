@@ -7,7 +7,7 @@ import ProtectedRoute from "./components/ProtectedRoute";
 
 export default function App() {
   return (
-     <BrowserRouter>
+    <BrowserRouter basename="/Mini_E_commerce">
       <Routes>
         <Route path="signup" element={<Signup />} />
         <Route path="verify-otp" element={<OtpVerify />} />
